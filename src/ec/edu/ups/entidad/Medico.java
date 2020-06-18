@@ -1,6 +1,9 @@
 package ec.edu.ups.entidad;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.*;
 
 /**
@@ -18,9 +21,13 @@ public class Medico implements Serializable {
 	private String nombre;
 	private String apellido;
 	private String especialidad;
-	
+	@OneToMany(cascade= CascadeType.ALL,mappedBy = "medico",orphanRemoval=true)
+	private List<Cita> citas;
 	public Medico() {
-		super();
+		citas= new ArrayList<Cita>();
 	}
+	
+	
+	
    
 }
