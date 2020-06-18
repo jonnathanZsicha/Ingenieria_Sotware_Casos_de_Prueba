@@ -4,5 +4,9 @@
 		<class>ec.edu.ups.entidad.Medico</class>
 		<class>ec.edu.ups.entidad.Cita</class>
 		<class>ec.edu.ups.entidad.Paciente</class>
+		<class>ec.edu.ups.entidad.HistorialClinico</class>
+		<class>ec.edu.ups.entidad.HistoriaClinica</class>
+		<class>ec.edu.ups.entidad.Prescripcion</class>
+		<class>ec.edu.ups.entidad.OrdenMedica</class>
 	</persistence-unit>
 </persistence>

@@ -23,6 +23,8 @@ public class Medico implements Serializable {
 	private String especialidad;
 	@OneToMany(cascade= CascadeType.ALL,mappedBy = "medico",orphanRemoval=true)
 	private List<Cita> citas;
+	@OneToMany(cascade= CascadeType.ALL,mappedBy = "medico",orphanRemoval=true)
+	private List<OrdenMedica> ordenesMedicas;
 	public Medico() {
 		citas= new ArrayList<Cita>();
 	}

@@ -22,6 +22,9 @@ public class Paciente implements Serializable {
 	private String nombre;
 	@OneToMany(cascade= CascadeType.ALL,mappedBy = "paciente",orphanRemoval = true)
 	private List<Cita> citas;
+	@OneToOne(cascade = CascadeType.ALL,mappedBy = "paciente",orphanRemoval = true)
+	private HistorialClinico historial_clinico;
+	
 	
 	public Paciente() {
 		citas = new ArrayList<Cita>();
