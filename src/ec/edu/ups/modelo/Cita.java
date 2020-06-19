@@ -53,7 +53,7 @@ public class Cita {
 		return cita;
 	}
 	
-	public Boolean ModificarCita(Cita cita) {
+	public Boolean modificarCita(Cita cita) {
 		return true;
 	}
 	public Boolean eliminarCita(Cita cita) {

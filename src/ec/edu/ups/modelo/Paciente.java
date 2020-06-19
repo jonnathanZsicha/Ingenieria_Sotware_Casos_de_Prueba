@@ -93,6 +93,14 @@ public class Paciente {
 		Cita cita=null;
 		return cita;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Paciente [codigo=" + codigo + ", apellido=" + apellido + ", nombre=" + nombre + ", citas=" + citas
+				+ ", historialClinico=" + historialClinico + "]";
+	}
 	
 	
 	

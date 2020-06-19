@@ -14,6 +14,42 @@ public class HistorialClinico {
 	
 	
 	
+	public HistorialClinico() {
+		
+	}
+
+	public HistorialClinico(int codigo, String descripcion, List<HistoriaClinica> historiasclinicas) {
+		super();
+		this.codigo = codigo;
+		this.descripcion = descripcion;
+		this.historiasclinicas = historiasclinicas;
+	}
+
+	
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public List<HistoriaClinica> getHistoriasclinicas() {
+		return historiasclinicas;
+	}
+
+	public void setHistoriasclinicas(List<HistoriaClinica> historiasclinicas) {
+		this.historiasclinicas = historiasclinicas;
+	}
+
 	//METODOS PARA LA CLASE HISTORIAL CLINICO
 	public HistorialClinico buscarHistorial() {
 		HistorialClinico historialclinico= null;

@@ -57,4 +57,11 @@ public class Prescripcion {
 		
 	}
 
+	@Override
+	public String toString() {
+		return "Prescripcion [codigo=" + codigo + ", medicamento=" + medicamento + ", observacion=" + observacion + "]";
+	}
+	
+	
+
 }
