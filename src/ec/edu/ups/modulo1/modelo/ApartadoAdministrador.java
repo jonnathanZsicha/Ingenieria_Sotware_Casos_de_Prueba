@@ -1,4 +1,4 @@
-package ec.edu.ups.modelo;
+package ec.edu.ups.modulo1.modelo;
 
 public class ApartadoAdministrador extends Apartado  {
 

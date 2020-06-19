@@ -2,8 +2,8 @@ package ec.edu.ups.modulo3.modelo;
 
 import java.util.List;
 
-import ec.edu.ups.modelo.ApartadoPaciente;
-import ec.edu.ups.modelo.Usuario;
+import ec.edu.ups.modulo1.modelo.ApartadoPaciente;
+import ec.edu.ups.modulo1.modelo.Usuario;
 
 public class Comprobante extends FacturaCabecera{
 

@@ -3,7 +3,7 @@ package ec.edu.ups.modulo3.modelo;
 import java.io.Serializable;
 import java.util.Date;
 
-import ec.edu.ups.modelo.ApartadoColaborador;
+import ec.edu.ups.modulo1.modelo.ApartadoColaborador;
 
 public class FacturaCabecera implements Serializable{
 
