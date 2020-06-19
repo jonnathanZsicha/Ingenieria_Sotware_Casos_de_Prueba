@@ -1,5 +1,8 @@
 package ec.edu.ups.modulo3.modelo;
 
+import ec.edu.ups.modulo2.modelo.Medico;
+
+import javax.annotation.Generated;
 import java.util.Date;
 
 public class Medicamento {
@@ -24,30 +27,30 @@ public class Medicamento {
 	public String getNombre() {
 		return nombre;
 	}
-
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	
 	public double getPrecio() {
 		return precio;
 	}
-
+	
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
+	
 	public int getRegistroSanitario() {
 		return registroSanitario;
 	}
-
+	
 	public void setRegistroSanitario(int registroSanitario) {
 		this.registroSanitario = registroSanitario;
 	}
 	
-	//Metodos de la clase
-	
-	
+	public boolean crearMedicamento(Medicamento medicamento){
+		return true;
+	}
 	
 	
 }

@@ -1,32 +1,28 @@
 package test.modulo3.modelo;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
+import ec.edu.ups.modulo3.modelo.Caja;
+
 class CajaTest {
+	private Caja c=null;
+	public CajaTest() {
+		// TODO Auto-generated constructor stub
+		c=new Caja();
+	}
 
-    @Test
-    void getCodigo() {
-    }
+	@Test
+	void testVerificarSaldo() {
+		boolean cc=c.verificarSaldo();
+		assertEquals(cc, false);
+	}
 
-    @Test
-    void setCodigo() {
-    }
+	@Test
+	void testEmviarTransaccion() {
+		boolean cc1=c.emviarTransaccion();
+		assertEquals(cc1, false);
+	}
 
-    @Test
-    void getFacturas() {
-    }
-
-    @Test
-    void setFacturas() {
-    }
-
-    @Test
-    void verificarSaldo() {
-    }
-
-    @Test
-    void emviarTransaccion() {
-    }
 }

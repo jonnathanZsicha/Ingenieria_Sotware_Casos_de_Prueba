@@ -39,8 +39,8 @@ public class Comprobante extends FacturaCabecera{
 
 	//metodos de la clase
 	
-	public void facturarOtraPersona(Usuario usuario) {
-		
+	public boolean facturarOtraPersona(Usuario usuario) {
+		return true;
 	}
 	
 	

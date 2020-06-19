@@ -53,12 +53,12 @@ public class FacturaCabecera implements Serializable{
 	
 	//Metodos de la clase
 	
-	public void calcularTotal() {
-		
+	public double calcularTotal() {
+		return 0;
 	}
 	
-	public void calcularSubTotak() {
-		
+	public double calcularSubTotal() {
+		return 0;
 	}
 	
 	

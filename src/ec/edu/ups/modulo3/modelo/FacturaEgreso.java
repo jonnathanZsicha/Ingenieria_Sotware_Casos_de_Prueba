@@ -16,8 +16,8 @@ public class FacturaEgreso extends FacturaCabecera{
 		this.detalles = detalles;
 	}
 
-	public void calcularTotal() {
-		
+	public double calcularTotal() {
+		return 0;
 	}
 
 }

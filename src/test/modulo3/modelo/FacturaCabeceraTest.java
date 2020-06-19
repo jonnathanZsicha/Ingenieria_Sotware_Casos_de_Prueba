@@ -1,40 +1,28 @@
 package test.modulo3.modelo;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
+import ec.edu.ups.modulo3.modelo.FacturaCabecera;
+
 class FacturaCabeceraTest {
+	private FacturaCabecera f=null;
+	public FacturaCabeceraTest() {
+		// TODO Auto-generated constructor stub
+		f=new FacturaCabecera();
+	}
 
-    @Test
-    void getCodigo() {
-    }
+	@Test
+	void testCalcularTotal() {
+		double c=f.calcularTotal();
+		assertEquals(c, 2.3);
+	}
 
-    @Test
-    void setCodigo() {
-    }
+	@Test
+	void testCalcularSubTotak() {
+		double c=f.calcularSubTotal();
+		assertEquals(c, 3.2);
+	}
 
-    @Test
-    void getFecha() {
-    }
-
-    @Test
-    void setFecha() {
-    }
-
-    @Test
-    void getColaborador() {
-    }
-
-    @Test
-    void setColaborador() {
-    }
-
-    @Test
-    void calcularTotal() {
-    }
-
-    @Test
-    void calcularSubTotak() {
-    }
 }

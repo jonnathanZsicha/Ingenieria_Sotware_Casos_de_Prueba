@@ -1,28 +1,24 @@
 package test.modulo3.modelo;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
+import ec.edu.ups.modulo1.modelo.Usuario;
+import ec.edu.ups.modulo3.modelo.Comprobante;
+
 class ComprobanteTest {
+	private Comprobante c=null;
+	public ComprobanteTest() {
+		// TODO Auto-generated constructor stub
+		c=new Comprobante();
+	}
 
-    @Test
-    void getPaciente() {
-    }
+	@Test
+	void testFacturarOtraPersona() {
+		Usuario u=new Usuario();
+		boolean cc1=c.facturarOtraPersona(u);
+		assertEquals(cc1, false);
+	}
 
-    @Test
-    void setPaciente() {
-    }
-
-    @Test
-    void getDetalles() {
-    }
-
-    @Test
-    void setDetalles() {
-    }
-
-    @Test
-    void facturarOtraPersona() {
-    }
 }

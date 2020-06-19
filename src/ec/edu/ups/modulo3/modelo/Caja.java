@@ -42,11 +42,12 @@ public class Caja implements Serializable{
 	
 	//Metodos de la clase
 	
-	public void verificarSaldo() {
-		
+	public boolean verificarSaldo() {
+		return true;
 	}
-	public void emviarTransaccion() {
-		
+
+	public boolean emviarTransaccion() {
+		return true;
 	}
 
 

@@ -2,11 +2,14 @@ package test.modulo1.modelo;
 
 import ec.edu.ups.modulo1.modelo.Apartado;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class ApartadoTest {
 
@@ -21,16 +24,18 @@ class ApartadoTest {
         apartado = new Apartado();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void cerrarSesion() {
         boolean resultadoEsperado = false;
         boolean resultadoObtenido = apartado.cerrarSesion();
         assertEquals(resultadoEsperado, resultadoObtenido);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getTiempoActividad() {
-        assertEquals(new SimpleDateFormat("dd/MM/yyyy").format("22/04/1999"), apartado.getTiempoActividad());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm/DD/yyyy");
+        String date = simpleDateFormat.format(new GregorianCalendar().getTime());
+        assertEquals(date, apartado.getTiempoActividad());
     }
 
 }

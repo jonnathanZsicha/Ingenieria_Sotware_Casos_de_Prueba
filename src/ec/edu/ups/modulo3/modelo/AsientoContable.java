@@ -52,8 +52,8 @@ public class AsientoContable {
 	}
 	
 //Metodos Clase
-	public void registrarOperacion() {
-		
+	public boolean registrarOperacion() {
+		return false;
 	}
 	
 	

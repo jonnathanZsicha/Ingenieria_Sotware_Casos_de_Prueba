@@ -28,8 +28,8 @@ public class FacturaDetalle {
 		this.medicamentos = medicamentos;
 	}
 	
-	public void calcularTotalDetalle(int cantidad , double precio) {
-		
+	public double calcularTotalDetalle(int cantidad , double precio) {
+		return 0.0;
 	}
 
 }

@@ -42,8 +42,8 @@ public class LibroDiario {
 		return null;
 	}
 
-	public void generarReportes() {
-		
+	public boolean generarReportes() {
+		return true;
 	}
 
 	
