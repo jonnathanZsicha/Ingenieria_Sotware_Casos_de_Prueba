@@ -1,6 +1,7 @@
 package ec.edu.ups.modelo;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 import ec.edu.ups.modelo.Cita;
@@ -12,16 +13,15 @@ public class Paciente {
 	private String nombre;
 	private List<Cita> citas;
 	private HistorialClinico historialClinico;
+	private List<Certificado> certificados;
 	
 	
 	public Paciente() {
-		super();
+		citas= new ArrayList<Cita>();
+		certificados= new ArrayList<Certificado>();
 	}
 
-	
-	
-	//METODOS PARA EL PACIENTE
-	
+
 	public int getCodigo() {
 		return codigo;
 	}
@@ -82,9 +82,24 @@ public class Paciente {
 
 
 
+	public List<Certificado> getCertificados() {
+		return certificados;
+	}
+
+
+
+	public void setCertificados(List<Certificado> certificados) {
+		this.certificados = certificados;
+	}
+	
+	
+	
+	//METODOS PARA EL PACIENTE
+
 	public void visualizarInformacion() {
 		
 	}
+
 	public Boolean modificarInformacion() {
 		return true;
 	}
@@ -93,8 +108,11 @@ public class Paciente {
 		Cita cita=null;
 		return cita;
 	}
-
-
+	
+	public Boolean agregarCertificado(Certificado certificado) {
+		return true;
+		
+	}
 
 	@Override
 	public String toString() {
