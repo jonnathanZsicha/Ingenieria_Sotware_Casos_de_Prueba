@@ -29,18 +29,19 @@ public class LibroDiario {
 	}
 	// Metodos de la clase
 	
-	public void calcularIngresos() {
-		
+	public double calcularIngresos() {
+		return 0;
 	}
-	public void calcularEgresos() {
-		
+	public double calcularEgresos() {
+		return 0;
 	}
-	public void calcularSaldoDisponible() {
-		
+	public double calcularSaldoDisponible() {
+		return 0;
 	}
-	public void visualizarAsientosContables() {
-		
+	public List<AsientoContable> visualizarAsientosContables() {
+		return null;
 	}
+
 	public void generarReportes() {
 		
 	}
