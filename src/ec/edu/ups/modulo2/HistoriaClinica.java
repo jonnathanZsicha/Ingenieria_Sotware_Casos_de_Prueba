@@ -1,4 +1,4 @@
-package ec.edu.ups.modelo;
+package ec.edu.ups.modulo2;
 
 import java.sql.Timestamp;
 import java.util.List;

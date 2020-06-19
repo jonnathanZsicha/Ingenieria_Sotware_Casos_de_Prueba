@@ -1,9 +1,9 @@
-package ec.edu.ups.modelo;
+package ec.edu.ups.modulo2;
 
 import java.sql.Date;
 import java.util.List;
 
-import ec.edu.ups.modelo.HistoriaClinica;
+import ec.edu.ups.modulo2.HistoriaClinica;
 
 public class HistorialClinico {
 	

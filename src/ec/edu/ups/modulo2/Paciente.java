@@ -1,10 +1,10 @@
-package ec.edu.ups.modelo;
+package ec.edu.ups.modulo2;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import ec.edu.ups.modelo.Cita;
+import ec.edu.ups.modulo2.Cita;
 
 public class Paciente {
 
