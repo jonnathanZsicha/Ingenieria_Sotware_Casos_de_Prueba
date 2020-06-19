@@ -1,6 +1,7 @@
 package ec.edu.ups.modulo2.modelo;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 public class Certificado {
 
@@ -59,7 +60,7 @@ public class Certificado {
 	
 	//METODO PARA CREAR CERTIFICADO
 
-	public Certificado crearCertificado(String observacion,Date fecha) {
+	public Certificado crearCertificado(String observacion, Date fecha) {
 		Certificado certificado= null;
 		return certificado;
 	}

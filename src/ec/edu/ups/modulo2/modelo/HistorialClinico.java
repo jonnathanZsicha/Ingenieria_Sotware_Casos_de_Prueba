@@ -1,6 +1,6 @@
 package ec.edu.ups.modulo2.modelo;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 import ec.edu.ups.modulo2.modelo.HistoriaClinica;
@@ -56,12 +56,13 @@ public class HistorialClinico {
 		return historialclinico;
 	}
 	
-	public Boolean crearHistorialClinico() {
+	public boolean crearHistorialClinico() {
 		return true;
 	}
 	
-	public void agregarHistoriaClinica(Date fecha, String observacion) {
+	public boolean agregarHistoriaClinica(Date fecha, String observacion) {
 		HistoriaClinica historiaclinica= null;
+		return false;
 	}
 	
 

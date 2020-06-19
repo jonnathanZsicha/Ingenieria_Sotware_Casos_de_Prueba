@@ -1,5 +1,7 @@
 package test.modulo2.modelo;
 
+import ec.edu.ups.modulo2.modelo.HistoriaClinica;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,50 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class HistoriaClinicaTest {
 
     @Test
-    void getCodigo() {
-    }
-
-    @Test
-    void setCodigo() {
-    }
-
-    @Test
-    void getFecha_hora() {
-    }
-
-    @Test
-    void setFecha_hora() {
-    }
-
-    @Test
-    void getObservacion() {
-    }
-
-    @Test
-    void setObservacion() {
-    }
-
-    @Test
-    void getPrescripcion() {
-    }
-
-    @Test
-    void setPrescripcion() {
-    }
-
-    @Test
-    void getOrdenesMedicas() {
-    }
-
-    @Test
-    void setOrdenesMedicas() {
-    }
-
-    @Test
     void consultarHistoriaClinica() {
+        HistoriaClinica retorno = new HistoriaClinica().consultarHistoriaClinica();
+        HistoriaClinica espearado = new HistoriaClinica();
+        assertEquals(espearado, retorno);
     }
 
-    @Test
-    void testToString() {
-    }
 }

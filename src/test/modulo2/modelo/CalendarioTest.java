@@ -1,44 +1,24 @@
 package test.modulo2.modelo;
 
+import ec.edu.ups.modulo2.modelo.Calendario;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalendarioTest {
 
-    @Test
-    void getCodigo() {
-    }
+    private Calendario calendario;
 
-    @Test
-    void setCodigo() {
-    }
-
-    @Test
-    void getDia() {
-    }
-
-    @Test
-    void setDia() {
-    }
-
-    @Test
-    void getMes() {
-    }
-
-    @Test
-    void setMes() {
-    }
-
-    @Test
-    void getAnio() {
-    }
-
-    @Test
-    void setAnio() {
+    @BeforeEach
+    void setUp(){
+        calendario = new Calendario();
     }
 
     @Test
     void consultarDisponibilidad() {
+        boolean retorno = calendario.consultarDisponibilidad();
+        boolean esperado = false;
+        assertEquals(esperado, retorno);
     }
 }

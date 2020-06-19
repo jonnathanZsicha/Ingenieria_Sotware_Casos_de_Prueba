@@ -1,48 +1,27 @@
 package test.modulo2.modelo;
 
+import ec.edu.ups.modulo2.modelo.Prescripcion;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrescripcionTest {
 
-    @Test
-    void getCodigo() {
-    }
+    private Prescripcion prescripcion;
 
-    @Test
-    void setCodigo() {
-    }
-
-    @Test
-    void getMedicamento() {
-    }
-
-    @Test
-    void setMedicamento() {
-    }
-
-    @Test
-    void getObservacion() {
-    }
-
-    @Test
-    void setObservacion() {
+    @BeforeEach
+    void setUp(){
+        prescripcion = new Prescripcion();
     }
 
     @Test
     void crearPrescripcion() {
+        String medicamento = "Benzonsato de potasio";
+        String observacion = "NA";
+        Prescripcion retorno = prescripcion.crearPrescripcion(medicamento, observacion);
+        Prescripcion esperado = new Prescripcion();
+        assertEquals(esperado, retorno);
     }
 
-    @Test
-    void enviarPrescripcion() {
-    }
-
-    @Test
-    void generarTratamiento() {
-    }
-
-    @Test
-    void testToString() {
-    }
 }

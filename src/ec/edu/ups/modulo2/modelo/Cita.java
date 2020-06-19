@@ -1,6 +1,7 @@
 package ec.edu.ups.modulo2.modelo;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 import ec.edu.ups.modulo2.modelo.Medico;
 
@@ -48,7 +49,7 @@ public class Cita {
 	
 	//METODOS PARA LA CLASE CITA
 	
-	public Cita crearCita(Timestamp fecha_hora, String disponibilidad) {
+	public Cita crearCita(Date fecha_hora, String disponibilidad) {
 		Cita cita = null;
 		return cita;
 	}
