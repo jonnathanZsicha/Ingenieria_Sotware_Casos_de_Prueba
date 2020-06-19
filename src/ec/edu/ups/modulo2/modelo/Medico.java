@@ -1,10 +1,10 @@
-package ec.edu.ups.modulo2;
+package ec.edu.ups.modulo2.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ec.edu.ups.modulo2.Cita;
-import ec.edu.ups.modulo2.OrdenMedica;
+import ec.edu.ups.modulo2.modelo.Cita;
+import ec.edu.ups.modulo2.modelo.OrdenMedica;
 
 public class Medico {
 	

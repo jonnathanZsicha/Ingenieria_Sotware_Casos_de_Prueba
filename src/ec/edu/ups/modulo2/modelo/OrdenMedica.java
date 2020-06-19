@@ -1,4 +1,4 @@
-package ec.edu.ups.modulo2;
+package ec.edu.ups.modulo2.modelo;
 
 import java.util.List;
 

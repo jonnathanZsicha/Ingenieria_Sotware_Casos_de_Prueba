@@ -1,8 +1,8 @@
-package ec.edu.ups.modulo2;
+package ec.edu.ups.modulo2.modelo;
 
 import java.sql.Timestamp;
 
-import ec.edu.ups.modulo2.Medico;
+import ec.edu.ups.modulo2.modelo.Medico;
 
 public class Cita {
 

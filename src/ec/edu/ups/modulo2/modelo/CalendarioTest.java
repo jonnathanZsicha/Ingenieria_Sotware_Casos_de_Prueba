@@ -1,10 +1,10 @@
-package ec.edu.ups.modulo2;
+package ec.edu.ups.modulo2.modelo;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class CitasTest {
+public class CalendarioTest {
 
 	@Test
 	public void test() {
