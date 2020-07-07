@@ -19,6 +19,9 @@ public class Paciente extends Persona implements Serializable {
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "paciente")
     private List<FacturaIngreso> facturas;
 
+    public Paciente() {
+    }
+
     public Paciente(List<Certificado> certificados, HistorialClinico historialClinico, List<Cita> citas) {
         this.certificados = certificados;
         this.historialClinico = historialClinico;

@@ -5,6 +5,7 @@ import ec.edu.ups.entidad_cit_cons_cert.Paciente;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
 
@@ -20,6 +21,7 @@ public class FacturaIngreso extends FacturaCabecera implements Serializable {
     public void facturarATercero(Paciente paciente){this.paciente=paciente;}
 
     public FacturaIngreso() {
+        facturadetalles= new ArrayList<FacturaDetalle>();
     }
 
     public FacturaIngreso(Paciente paciente, List<FacturaDetalle> facturadetalles, Cita cita) {
