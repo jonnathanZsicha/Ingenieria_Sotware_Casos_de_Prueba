@@ -10,8 +10,11 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 public class FacturaIngreso extends FacturaCabecera implements Serializable {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int codigo;
     @ManyToOne
     private Paciente paciente;
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "facturaingreso")

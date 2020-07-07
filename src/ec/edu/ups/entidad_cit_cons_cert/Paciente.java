@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 public class Paciente extends Persona implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "paciente")

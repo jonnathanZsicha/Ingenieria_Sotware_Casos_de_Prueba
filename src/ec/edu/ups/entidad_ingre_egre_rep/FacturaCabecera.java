@@ -7,6 +7,7 @@ import java.util.GregorianCalendar;
 import java.util.Objects;
 
 @Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 public class FacturaCabecera implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

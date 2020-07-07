@@ -5,6 +5,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 public class Medico extends Persona implements Serializable {
 
     private String especialidad;

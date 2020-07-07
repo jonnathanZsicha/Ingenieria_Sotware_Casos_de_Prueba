@@ -1,9 +1,6 @@
 package ec.edu.ups.entidad_ingre_egre_rep;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.GregorianCalendar;
 import java.util.List;
