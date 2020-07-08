@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Ingenieria_Sotware_Casos_de_Prueba:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ingenieria_Sotware_Casos_de_Prueba_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Ingenieria_Sotware_Casos_de_Prueba/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Ingenieria_Sotware_Casos_de_Prueba" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib1" />
+          <element id="library" level="project" name="PrimeFaces-6.1" />
+          <element id="library" level="project" name="JBoss Weld-2.0.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
