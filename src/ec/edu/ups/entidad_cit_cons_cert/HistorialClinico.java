@@ -13,7 +13,7 @@ public class HistorialClinico implements Serializable {
     private String descripcion;
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "historialclinico")
     private List<HistoriaClinica> historiasclinicas;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     private Paciente paciente;
 
     public HistorialClinico() {

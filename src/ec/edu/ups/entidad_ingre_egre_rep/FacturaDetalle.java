@@ -15,8 +15,24 @@ public class FacturaDetalle implements Serializable {
     private int cantidad;
     @OneToOne(cascade = CascadeType.ALL,mappedBy = "facturadetalle")
     private Medicamento medicamento;
+    private double total;
 
     public FacturaDetalle() {
+    }
+
+    public FacturaDetalle(FacturaIngreso facturaingreso, int cantidad, Medicamento medicamento, double total) {
+        this.facturaingreso = facturaingreso;
+        this.cantidad = cantidad;
+        this.medicamento = medicamento;
+        this.total = total;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 
     public int getCodigo() {

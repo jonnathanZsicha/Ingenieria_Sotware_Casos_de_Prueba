@@ -2,6 +2,7 @@ package ec.edu.ups.entidad_ingre_egre_rep;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -13,12 +14,25 @@ public class Caja implements Serializable {
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "caja")
     private List<FacturaCabecera> facturas;
 
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "caja")
+    private List<FacturaIngreso> facturasIngreso;
+
+
     public Caja() {
+        facturasIngreso= new ArrayList<FacturaIngreso>();
     }
 
     public Caja(int codigo, List<FacturaCabecera> facturas) {
         this.codigo = codigo;
         this.facturas = facturas;
+    }
+
+    public List<FacturaIngreso> getFacturasIngreso() {
+        return facturasIngreso;
+    }
+
+    public void setFacturasIngreso(List<FacturaIngreso> facturasIngreso) {
+        this.facturasIngreso = facturasIngreso;
     }
 
     public int getCodigo() {

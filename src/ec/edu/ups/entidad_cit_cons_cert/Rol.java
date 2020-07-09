@@ -12,16 +12,20 @@ public class Rol implements Serializable {
     private int codigo;
     private String nombre;
     private String descripcion;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "rol")
-    private List<Persona> personas;
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "rol")
+    private List<Paciente> pacientes;
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "rol")
+    private List<Medico> medicos;
 
     public Rol() {
 
     }
 
-    public Rol(String nombre, String descripcion) {
+    public Rol(String nombre, String descripcion, List<Paciente> pacientes, List<Medico> medicos) {
         this.nombre = nombre;
         this.descripcion = descripcion;
+        this.pacientes = pacientes;
+        this.medicos = medicos;
     }
 
     public int getCodigo() {
@@ -48,6 +52,22 @@ public class Rol implements Serializable {
         this.descripcion = descripcion;
     }
 
+    public List<Paciente> getPacientes() {
+        return pacientes;
+    }
+
+    public void setPacientes(List<Paciente> pacientes) {
+        this.pacientes = pacientes;
+    }
+
+    public List<Medico> getMedicos() {
+        return medicos;
+    }
+
+    public void setMedicos(List<Medico> medicos) {
+        this.medicos = medicos;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -67,6 +87,8 @@ public class Rol implements Serializable {
                 "codigo=" + codigo +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
+                ", pacientes=" + pacientes +
+                ", medicos=" + medicos +
                 '}';
     }
 }
